@@ -11,7 +11,9 @@ package-lock.json
 sitemap.xml
 cron.txt
 
+
 /assets
+/backup
 /cache
 /images
 /logs
