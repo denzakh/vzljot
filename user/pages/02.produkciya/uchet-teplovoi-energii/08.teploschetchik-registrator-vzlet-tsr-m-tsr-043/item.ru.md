@@ -2,14 +2,13 @@
 title: 'Теплосчетчик-регистратор  ВЗЛЕТ ТСР-М  (ТСР-043)'
 media_order: tsr-043.jpg
 content:
-    items:
-        - '@self.children'
-    limit: 5
+    items: '- ''@self.children'''
+    limit: '5'
     order:
         by: date
         dir: desc
-    pagination: true
-    url_taxonomy_filters: true
+    pagination: '1'
+    url_taxonomy_filters: '1'
 ---
 
 Доступное решение для использования на большинстве объектов для абонентского учета тепла с точностью, регламентируемой для коммерческого учета.

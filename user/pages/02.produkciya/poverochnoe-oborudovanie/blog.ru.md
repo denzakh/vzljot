@@ -1,9 +1,9 @@
 ---
-title: 'Измерение и учет расхода жидкостей (ультразвуковой метод)'
+title: 'Поверочное оборудование'
 content:
     items:
         - '@self.children'
-    limit: 100
+    limit: 30
     order:
         by: date
         dir: desc

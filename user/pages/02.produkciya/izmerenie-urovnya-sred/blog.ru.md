@@ -1,9 +1,9 @@
 ---
-title: 'Измерение и учет расхода жидкостей (ультразвуковой метод)'
+title: 'Измерение уровня различных сред'
 content:
     items:
         - '@self.children'
-    limit: 100
+    limit: 5
     order:
         by: date
         dir: desc

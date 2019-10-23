@@ -3,7 +3,7 @@ title: 'Учет тепловой энергии'
 content:
     items:
         - '@self.children'
-    limit: 5
+    limit: 100
     order:
         by: date
         dir: desc

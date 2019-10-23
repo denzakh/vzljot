@@ -4,10 +4,10 @@ show_sidebar: true
 content:
     items:
         - '@self.children'
-    limit: 15
+    limit: 100
     order:
         by: date
-        dir: desc
+        dir: asc
     pagination: true
     url_taxonomy_filters: true
 ---
