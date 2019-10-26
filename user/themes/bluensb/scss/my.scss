@@ -1,3 +1,52 @@
+h1 {
+  margin-bottom: 0.4em;
+}
+
+h5 {
+  margin-top: 1rem;
+}
+
+.page-content {
+  a {
+    color: #4086c4;
+    outline: none;
+    text-decoration: none;
+    border-bottom: 1px solid lighten(#1e90d2, 40%);
+  }
+}
+
+#body-wrapper {
+  // min-height: 100vh;
+}
+
+#breadcrumbs {
+  flex-wrap: wrap;
+  height: auto;
+  min-height: 3rem;
+  line-height: 1;
+}
+
+#breadcrumbs a:not(:first-child)::before,
+#breadcrumbs span:not(:first-child)::before {
+    display: none;
+}
+
+#breadcrumbs a:not(:last-child)::after,
+#breadcrumbs span:not(:last-child)::after {
+    padding-left: .5rem;
+    content: '/';
+    color: #e7e9ed;
+}
+
+#breadcrumbs a, #breadcrumbs span {
+  padding: 0;
+  padding-right: .2rem;
+}
+
+#breadcrumbs a:last-child + span {
+  font-weight: bold;
+}
+
 .catalog-link {
   display: inline-flex;
   align-items: center;
@@ -11,6 +60,7 @@
 
 .catalog-root {
   .hero {
+    padding-top: 6rem;
     padding-bottom: 1rem;
   }
   h1.blog-title {
@@ -118,3 +168,78 @@
 #footer .no-wrap {
   white-space: nowrap;
 }
+
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#body-wrapper .container {
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+.header-dark #header:not(.scrolled) {
+  color: #fff;
+  background: transparent;
+  border-bottom: none;
+  .container {
+    background-color: #4086c4;
+  }
+}
+
+.home-root {
+  background: url("../images/bridge-s.jpg") 50% 0 no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  &.header-dark #header:not(.scrolled) {
+    background-color: #4086c4;
+  }
+}
+
+.about-root {
+  background: url("../images/industry.jpg") 50% 0 no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+.catalog-root {
+  background: url("../images/pipes-bl.jpg") 50% 0 no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+
+  h1 {
+    color: #ffffff;
+    text-shadow: 0 0 9px #064278;
+  }
+  #body-wrapper .container {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  &.header-dark #header:not(.scrolled) {
+    background-color: #4086c4;
+  }
+}
+
+.contact-root {
+  background: url("../images/map2.jpg") 50% 0 no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width:640px) {
+  #body-wrapper .container {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    box-shadow: none;
+  }
+  .header-dark #header:not(.scrolled) {
+    background-color: #4086c4;
+  }
+  .about-root,
+  .contact-root,
+  .catalog-root {
+    background: none;
+  }
+}
+
