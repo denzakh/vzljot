@@ -61,21 +61,21 @@
 
       .top {
         transform: translateY($bar-offset) translateX(0) rotate(45deg);
-        background: $mobile-color-active;
+        background: #ffffff;
       }
       .middle {
         opacity: 0;
-        background: $mobile-color-active;
+        background: #ffffff;
       }
 
       .bottom {
         transform: translateY(-($bar-offset)) translateX(0) rotate(-45deg);
-        background: $mobile-color-active;
+        background: #ffffff;
       }
     }
 
     span {
-      background: $mobile-color-main;
+      background: #ffffff;
       border: none;
       height: 4px;
       width: 100%;
@@ -93,6 +93,12 @@
         top: $bar-offset * 2;
       }
     }
+  }
+}
+
+.scrolled + .mobile-menu .button_container {
+  span {
+    background: #5fa1f2;
   }
 }
 
@@ -114,7 +120,6 @@
 
   }
   nav {
-
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -140,15 +145,15 @@
   li {
     list-style: none;
     margin: 0 0 1px;
-    padding: 5px 0;
+    padding: 20px 0;
     line-height: 1.2rem;
 
-    background: rgba($gray-color-dark,0.1);
+    // background: rgba($gray-color-dark,0.1);
 
     a {
       display: block;
       margin-left: 1.2rem;
-      font-size: 1rem;
+      font-size: 1.5rem;
 
       &:hover, &:focus, &.active {
         color: $primary-color-light !important;
@@ -174,21 +179,21 @@
     }
   }
 
-  li.tree-empty  > .toggler {
-    opacity: 0.3; cursor: default;
+  // li.tree-empty  > .toggler {
+  //   opacity: 0.3; cursor: default;
 
-    &:before {
-      content: "\2022";
-    }
-  }
+  //   &:before {
+  //     content: "\2022";
+  //   }
+  // }
 
-  li.tree-closed > .toggler:before {
-    content: "+";
-  }
+  // li.tree-closed > .toggler:before {
+  //   content: "+";
+  // }
 
-  li.tree-opened > .toggler:before {
-    content: "\2212";
-  }
+  // li.tree-opened > .toggler:before {
+  //   content: "\2212";
+  // }
 }
 
 .mobile-nav-open {

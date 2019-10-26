@@ -1,5 +1,6 @@
 // Tables
-.table {
+.table,
+.pTable {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
@@ -49,9 +50,20 @@
   td,
   th {
     border-bottom: $border-width solid $border-color;
-    padding: $unit-3 $unit-2;
+    padding: $unit-2 $unit-2;
+
+    font-size: 0.8rem;
+    line-height: 1;
   }
   th {
     border-bottom-width: $border-width-lg;
+    background-color: #4086c4;
+    color: #ffffff;
+  }
+  td {
+    vertical-align: top;
+    p {
+      margin-bottom: 0;
+    }
   }
 }

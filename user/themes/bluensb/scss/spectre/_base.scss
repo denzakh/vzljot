@@ -25,7 +25,7 @@ a {
   color: $link-color;
   outline: none;
   text-decoration: none;
-  border-bottom: 1px solid lighten($link-color-dark, 40%);
+  // border-bottom: 1px solid lighten($link-color-dark, 40%);
 
   &:focus {
     @include control-shadow();

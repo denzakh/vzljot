@@ -1,4 +1,7 @@
 /** Extra columns spacing **/
+* {
+  // outline: 1px solid rgba(200,100,50,0.3);
+}
 .extra-spacing:not(.col-12), :not(.col12) > .e-content {
   padding-right: 1rem;
 
@@ -20,8 +23,12 @@
     display: none;
   }
 
+  a {
+    border-bottom: none;
+  }
+
   span, a {
-    padding: 0 0.5rem;
+    padding: 0 0.2rem;
     &:first-child {
       padding-left: 0;
     }
@@ -31,23 +38,28 @@
     &:not(:first-child)::before {
       color: #e7e9ed;
       content: "/";
-      padding-right: 1rem;
+      padding-right: 0.5rem;
     }
   }
 }
 
 /** Blog Listing **/
 .blog-listing {
+  .bricklayer {
+    margin: 0 -12px;
+  }
 
   .bricklayer-column {
-    padding-left: 0px;
-    padding-right: 25px;
-
+    padding: 0 12px;
   }
   .card {
     margin-bottom: 25px;
     border: 0;
     box-shadow: 0 10px 45px -9px rgba(0,0,0,0.1);
+  }
+
+  .card-image {
+    text-align: center;
   }
 
   .card-footer {
@@ -56,6 +68,7 @@
 
   .blog-date {
     font-size: 13px;
+    display: none;
   }
 
   .label {
@@ -69,6 +82,10 @@
 
   h2 {
     margin-bottom: 0.5rem;
+  }
+  .blog-title {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
   }
 }
 

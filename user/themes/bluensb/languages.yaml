@@ -148,8 +148,8 @@ ru:
     BLOG:
       ITEM:
         CONTINUE_READING: Читать далее...
-        NEXT_POST: Следующая запись
-        PREV_POST: Предыдущая запись
+        NEXT_POST: Следующий товар
+        PREV_POST: Предыдущий товар
     SIDEBAR:
       SIMPLE_SEARCH:
         HEADLINE: Поиск

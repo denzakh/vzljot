@@ -4,7 +4,8 @@ html {
 
 #body-wrapper {
   .container {
-    padding: $vert-padding;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   // Fixed Header solution
@@ -35,8 +36,8 @@ section.section {
   align-items: center;
   justify-content: center;
 
-  padding-top: 6rem;
-  padding-bottom: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 0rem;
   background-size: cover;
   background-position: center;
 
@@ -69,7 +70,7 @@ section.section {
   &.hero-tiny {
     min-height: 8rem;
   }
-  
+
   .header-fixed & {
     background-position: 50% 0;
   }
