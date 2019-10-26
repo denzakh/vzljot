@@ -6,7 +6,7 @@ content:
         - '@self.children'
     limit: 100
     order:
-        by: date
+        by: folder
         dir: asc
     pagination: true
     url_taxonomy_filters: true

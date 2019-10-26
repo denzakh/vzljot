@@ -1,13 +1,14 @@
 title: 'Взлет Новосибирск'
-default_lang: en
+default_lang: ru
 author:
-  name: 'Joe Bloggs'
-  email: joe@example.com
+  name: Denis
+  email: den.zakh@gmail.com
 taxonomies:
   - category
   - tag
 metadata:
-  description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+  description: 'Официальный представитель компании Взлет в Новосибирске. Продажа приборов учета расхода жидкостей, газа и тепловой энергии.'
+  0: 'взлет, приборы учета'
 summary:
   enabled: true
   format: short
