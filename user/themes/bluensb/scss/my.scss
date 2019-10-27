@@ -82,7 +82,6 @@ h5 {
       margin-bottom: 20px;
       border-left: 6px solid;
       padding-left: 10px;
-
     }
 
     .card-header {
@@ -161,35 +160,53 @@ h5 {
       }
     }
   }
-
-
 }
 
-#footer .no-wrap {
-  white-space: nowrap;
+.home-root,
+.about-root,
+.catalog-root,
+.contact-root {
+  #footer {
+    background-color: transparent!important;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0))!important;
+    color: #d7d7d7;
+    text-shadow: 0 0 2px #000000;
+    .no-wrap {
+      white-space: nowrap;
+    }
+    a {
+      color: #ffffff;
+    }
+  }
 }
+
 
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-#body-wrapper .container {
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
-}
-
-.header-dark #header:not(.scrolled) {
-  color: #fff;
-  background: transparent;
-  border-bottom: none;
-  .container {
-    background-color: #4086c4;
+.home-root,
+.about-root,
+.catalog-root,
+.contact-root {
+  #body-wrapper .container {
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+  }
+  .header-dark #header:not(.scrolled) {
+    color: #fff;
+    background: transparent;
+    border-bottom: none;
+    .container {
+      background-color: #4086c4;
+    }
   }
 }
 
+
 .home-root {
-  background: url("../images/bridge-s.jpg") 50% 0 no-repeat;
+  background: url("../images/bridge-d4.jpg") 50% 0 no-repeat;
   background-attachment:fixed;
   background-size: cover;
   &.header-dark #header:not(.scrolled) {
@@ -204,7 +221,7 @@ h5 {
 }
 
 .catalog-root {
-  background: url("../images/pipes-bl.jpg") 50% 0 no-repeat;
+  background: url("../images/pipes-d1.jpg") 50% 0 no-repeat;
   background-attachment:fixed;
   background-size: cover;
 
@@ -222,7 +239,7 @@ h5 {
 }
 
 .contact-root {
-  background: url("../images/map2.jpg") 50% 0 no-repeat;
+  background: url("../images/map2-sep3.jpg") 50% 0 no-repeat;
   background-attachment:fixed;
   background-size: cover;
 }
@@ -238,8 +255,32 @@ h5 {
   }
   .about-root,
   .contact-root,
-  .catalog-root {
+  .catalog-root,
+  .home-root {
     background: none;
+    #body-wrapper .container {
+      box-shadow: none;
+      margin-bottom: 0;
+    }
+    #footer {
+      background-color: #f8f9fa!important;
+      background-image: none!important;
+      color: #acb3c2;
+      text-shadow: none;
+      a {
+        color: #4086c4;
+      }
+    }
+  }
+  .catalog-root {
+    h1 {
+      color: #000000;
+      text-shadow: none;
+    }
+
+    .hero .container {
+      padding: 0 5px;
+    }
+
   }
 }
-
